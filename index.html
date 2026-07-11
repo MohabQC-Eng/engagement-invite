@@ -3,23 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light">
 <title>دعوة خطوبة</title>
 <style>
+  :root{
+    --lav-1:#efe9f5;
+    --lav-2:#c9b7de;
+    --lav-3:#a68fc9;
+    --lav-4:#7c5fa8;
+    --lav-deep:#5b4485;
+    --leaf:#7c9473;
+    --leaf-dark:#5a7052;
+    --gold:#c69a5c;
+    --gold-light:#e0bd85;
+    --ink:#3f3c46;
+    --paper:#fffdfb;
+  }
+
+  *{box-sizing:border-box;}
 
   body{
-    margin:0;
     width: 100vw;
-    height: 100vh; 
+    margin:0;
+    min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
     background:linear-gradient(160deg,#eae3f2 0%,#f6f2fa 45%,#ece5f2 100%);
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
-    font-family:"Segoe UI","Traditional Arabic","Amiri",Georgia,serif;
     padding:24px;
-    box-sizing: border-box;
   }
 
   .card{
@@ -30,12 +42,12 @@
     background:var(--paper) url("full_bg.jpg") center/cover no-repeat;
     border-radius:6px;
     overflow:hidden;
-    isolation: isolate; /* ← أضف السطر هنا لحماية الكارت */
     box-shadow:
       0 2px 4px rgba(91,68,133,0.12),
       0 20px 45px rgba(91,68,133,0.22),
       0 0 0 1px rgba(255,255,255,0.4) inset;
   }
+
   .wash{
     position:absolute;
     top:28%;
@@ -127,6 +139,7 @@
   }
 
   .date-row{
+    /* margin-top:auto; */
     padding-top:10%;
     display:flex;
     align-items:center;
@@ -171,8 +184,6 @@
     align-items:center;
     justify-content:center;
     background:linear-gradient(160deg,#eae3f2 0%,#f6f2fa 45%,#ece5f2 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
     transition:opacity .7s ease, visibility .7s ease;
   }
   .overlay.hidden{
