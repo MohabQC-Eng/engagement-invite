@@ -6,28 +6,6 @@
   <meta name="color-scheme" content="light">
 <title>دعوة خطوبة</title>
 <style>
-  /* منع المتصفح من إجبار الدارك مود وتثبيت المظهر الفاتح */
-  :root {
-    color-scheme: light !important;
-    --lav-1:#efe9f5;
-    --lav-2:#c9b7de;
-    --lav-3:#a68fc9;
-    --lav-4:#7c5fa8;
-    --lav-deep:#5b4485;
-    --leaf:#7c9473;
-    --leaf-dark:#5a7052;
-    --gold:#c69a5c;
-    --gold-light:#e0bd85;
-    --ink:#3f3c46;
-    --paper:#fffdfb;
-  }
-
-  /* حماية ألوان الخلفية والنصوص من التعديل التلقائي للمتصفح */
-  body, .card, .overlay-card, .open-btn {
-    forced-color-adjust: none !important;
-  }
-
-  *{box-sizing:border-box;}
 
   body{
     margin:0;
@@ -47,7 +25,7 @@
   .card{
     position:relative;
     width:100%;
-    /* max-width:520px; */
+    max-width:520px;
     aspect-ratio:726/1024;
     background:var(--paper) url("full_bg.jpg") center/cover no-repeat;
     border-radius:6px;
